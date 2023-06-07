@@ -1,20 +1,15 @@
 import java.util.Scanner;
- 
+
 public class Main {
- 
 	public static void main(String[] args) {
- 
-		Scanner in = new Scanner(System.in);
-        
-		int A = in.nextInt();
-		int B = in.nextInt();
-        
-        in.close();
-        
-		A = Integer.parseInt(new StringBuilder().append(A).reverse().toString());
-		B = Integer.parseInt(new StringBuilder().append(B).reverse().toString());
-		
-		System.out.print(A > B ? A : B);
-	
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		sc.close();
+
+		a = Integer.parseInt(new StringBuilder().append(a).reverse().toString());
+		b = Integer.parseInt(new StringBuilder().append(b).reverse().toString());
+
+		System.out.println(a > b ? a : b);
 	}
 }
